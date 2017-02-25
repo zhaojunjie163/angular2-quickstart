@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    FormsModule,// to leverage ngModel built-in directive, we have to import this module.
     HttpModule
   ],
   providers: [],
