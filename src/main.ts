@@ -7,4 +7,11 @@ if (environment.production) {
   enableProdMode();
 }
 
+
+/*
+*
+* Here is the application entry point
+*
+*
+* */
 platformBrowserDynamic().bootstrapModule(AppModule);
