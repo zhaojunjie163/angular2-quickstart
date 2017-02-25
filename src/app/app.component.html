@@ -1,12 +1,5 @@
-<h1>
-  {{hero.id}}
-
-</h1>
-
-<h2>
-  {{hero.name}}
-</h2>
 <h5>
-  {{hero.name}}
-  <input [(ngModel)]="hero.name" placeholder="name">
+  <ul class="heroes">
+    <li *ngFor="let hero of heroes" (click)="onSelect(hero)">{{hero.name}}</li>
+  </ul>
 </h5>
