@@ -1,5 +1,13 @@
-<h5>
+<div>
   <ul class="heroes">
-    <li *ngFor="let hero of heroes" (click)="onSelect(hero)">{{hero.name}}</li>
+    <li *ngFor="let hero of heroes" (click)="onSelect(hero)"
+        [class.selected]="hero===selectedHero">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </li>
   </ul>
-</h5>
+</div>
+
+<div *ngIf="selectedHero">
+  <my-hero-detail [hero]="selectedHero"></my-hero-detail>
+</div>
+

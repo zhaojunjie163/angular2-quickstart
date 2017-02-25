@@ -36,8 +36,11 @@ export class AppComponent {
   //define properties here,{{}} is the "interpolation" form of one-way data binding.
   //name: string = 'zhao junjie!'
   // Below is the model and how to initialize it
-  selectedHero: Hero;
-  heroes: Hero[] = HEROES;
+  selectedHero: Hero={
+    id:12,
+    name:"default"
+  };
+  heroes : Hero[]= HEROES;
 
   /*hero: Hero = {
    id: 12,
